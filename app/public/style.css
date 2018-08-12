@@ -1,0 +1,68 @@
+body {
+    background-color: whitesmoke
+}
+
+.jumbotron {
+    background-color: black;
+}
+.header {
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: 28px;
+}
+
+.subheader {
+    color: mintcream;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+
+
+#surveybutton {
+    text-align: center;
+    font-size: 20px;
+}
+
+#surveybox {
+    margin-top: 18px;
+    padding-top:20px;
+}
+
+#surveybuttonimage {
+    margin-right: 10px;
+}
+
+.questionList {
+    background-color: lightgray;
+    padding: 10px;
+}
+.questions{
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight:bold;
+    text-align: center;
+
+}
+
+#surveyButton {
+    padding: 25px;
+}
+
+
+.userForm {
+    background-color: lightgrey;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.surveyNotes{
+    font-size: 18px;
+    text-align: center;
+    margin-top: 30px;
+}

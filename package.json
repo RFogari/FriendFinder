@@ -1,0 +1,32 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "Express server application matching friends.",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "path": "^0.12.7",
+    "serve-static": "^1.13.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RFogari/FriendFinder.git"
+  },
+  "keywords": [
+    "Node",
+    "Express",
+    "FriendFinder"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RFogari/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/RFogari/FriendFinder#readme"
+}

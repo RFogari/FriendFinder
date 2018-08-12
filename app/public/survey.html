@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Friend Finder Survey</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="/app/assets/css/style.css" type="text/css">-->
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
+     
+    
+</head>
+<body>
+
+    <div class="container">
+        <div class="header jumbotron text-center">
+                <i class="fas fa-users fa-2x"></i>
+                <br>
+                <h1>FriendFinder: Survey</h1>
+                <br>
+                <p class="surveyNotes"> Answer the survey questions below based on how strongly you argree with the statements. <br>
+                        The response options rank from 1, meaning not so much, to 5 meaning very much.
+                </p>
+        </div>
+    </div>
+
+    <div class="container">
+
+
+            <div class="userForm">
+                    <div class="form-group">
+                            <label for="userName">Enter Your Full Name</label>
+                            <input type="text" class="form-control" id="userName" placeholder="Full Name Required">
+
+                    </div>
+
+                    <div class="form-group">
+                            <label for"userPhoto">Link To Your Photo</label>
+                            <input type="text" class="form-control" id="userPhoto" placeholder="Personal Photo Required">
+                    </div>
+            </div>
+    </div>
+    
+    
+
+    <div class="container">
+        <div class="questionList">
+            <div class="questions">
+                    <div class="form-group">
+                            <h4 class="questionnumbertext">Question 1</h4>
+                            <label for="question1" class="question">You enjoy the study of Archaelogy and ancient civilizations</label>
+                            <select class="form-control" id="q1">
+                              <option selected>Select an Option</option>
+                              <option value="1">1 <span id="answerDetail">(Not So Much)</span></option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5 <span id="answerDetail">(Very Much)</span></option>
+                            </select>
+                    </div>
+            </div>
+
+            <div class="questions">
+                    <div class="form-group">
+                            <h4 class="questionnumbertext">Question 2</h4>
+                            <label for="question2" class="question">You are loyal to your friends, more loyal to your family.  People may call you Don.</label>
+                            <select class="form-control" id="q2">
+                              <option selected>Select an Option</option>
+                              <option value="1">1 <span id="answerDetail">(Not So Much)</span></option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5 <span id="answerDetail">(Very Much)</span></option>
+                            </select>
+                    </div>
+            </div>
+
+            <div class="questions">
+                    <div class="form-group">
+                            <h4 class="questionnumbertext">Question 3</h4>
+                            <label for="question3" class="question"> You have a love of writing.  If only you could finish that novel.</label>
+                            <select class="form-control" id="q3">
+                              <option selected>Select an Option</option>
+                              <option value="1">1 <span id="answerDetail">(Not So Much)</span></option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5 <span id="answerDetail">(Very Much)</span></option>
+                            </select>
+                    </div>
+            </div>
+
+
+            <div class="questions">
+                    <div class="form-group">
+                            <h4 class="questionnumbertext">Question 4</h4>
+                            <label for="question4" class="question">You love traveling, arid climates, exploring temples.</label>
+                            <select class="form-control" id="q4">
+                              <option selected>Select an Option</option>
+                              <option value="1">1 <span id="answerDetail">(Not So Much)</span></option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5 <span id="answerDetail">(Very Much)</span></option>
+                            </select>
+                    </div>
+            </div>
+            
+            <div class="questions">
+                    <div class="form-group">
+                            <h4 class="questionnumbertext">Question 5</h4>
+                            <label for="question5" class="question">You are a wealthy entrepreneur running an enterprise by day, with a secret identity by night.</label>
+                            <select class="form-control" id="q5">
+                              <option value="1">1 <span id="answerDetail">(Not So Much)</span></option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5 <span id="answerDetail">(Very Much)</span></option>
+                            </select>
+                    </div>
+            </div>
+
+            <div class="questions">
+                    <div class="form-group">
+                            <h4 class="questionnumbertext">Question 6</h4>
+                            <label for="question6" class="question">You love the winter.  You dream of one day becoming a winter caretaker for a hotel.</label>
+                            <select class="form-control" id="q6">
+                              <option selected>Select an Option</option>
+                              <option value="1">1 <span id="answerDetail">(Not So Much)</span></option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5 <span id="answerDetail">(Very Much)</span></option>
+                            </select>
+                    </div>
+            </div>
+
+            <div class="questions">
+                    <div class="form-group">
+                            <h4 class="questionnumbertext">Question 7</h4>
+                            <label for="question7" class="question">You are a fighter.  Box in the ring.  Box in the meat locker.</label>
+                            <select class="form-control" id="q7">
+                              <option selected>Select an Option</option>
+                              <option value="1">1 <span id="answerDetail">(Not So Much)</span></option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5 <span id="answerDetail">(Very Much)</span></option>
+                            </select>
+                    </div>
+            </div>
+
+
+            <div class="questions">
+                    <div class="form-group">
+                            <h4 class="questionnumbertext">Question 8</h4>
+                            <label for="question8" class="question">You are a leader, a warrior, a diplomat and one day a general.</label>
+                            <select class="form-control" id="q8">
+                              <option selected>Select an Option</option>
+                              <option value="1">1 <span id="answerDetail">(Not So Much)</span></option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5 <span id="answerDetail">(Very Much)</span></option>
+                            </select>
+                    </div>
+            </div>
+
+
+            <div class="questions">
+                    <div class="form-group">
+                            <h4 class="questionnumbertext">Question 9</h4>
+                            <label for="question9" class="question">You live in a city, work in a city, fight in a city.</label>
+                            <select class="form-control" id="q9">
+                              <option selected>Select an Option</option>
+                              <option value="1">1 <span id="answerDetail">(Not So Much)</span></option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5 <span id="answerDetail">(Very Much)</span></option>
+                            </select>
+                    </div>
+            </div>
+
+            <div class="questions">
+                    <div class="form-group">
+                            <h4 class="questionnumbertext">Question 10</h4>
+                            <label for="question10" class="question">You have a love of space and other galaxies.</label>
+                            <select class="form-control" id="q10">
+                              <option selected>Select an Option</option>
+                              <option value="1">1 <span id="answerDetail">(Not So Much)</span></option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5 <span id="answerDetail">(Very Much)</span></option>
+                            </select>
+                    </div>
+            </div>
+
+            <div id="surveyButton" class="text-center">
+          
+                        <button type="submit" class="btn btn-primary submit">Submit</button>
+                </div>
+        </div>
+        
+                
+</div>
+
+
+
+
+
+
+    <!--modal code-->
+
+    
+<!-- Modal -->
+        <div class="modal fade" id="matchModal" tabindex="-1" role="dialog" aria-labelledby="friendModal" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="modalTitle">Your most compatible match.</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                        
+                        <h2 id="friendName"></h2>
+                        <img id="friendImage" src="">
+
+                </div>
+                <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal" id="modalClose">Close</button>
+                </div>
+                </div>
+                </div>
+        </div>
+
+
+        <br>
+        <br>
+        <footer class="footer">
+                        <div class="container">
+                          <p><a href="/api/friends">API Friends Link</a> | <a href="/api/home">API Home</a> | <a href="https://github.com/RFogari/FriendFinder.git">GitHub Repo</a></p>
+                        </div>
+                </footer>
+
+
+
+
+
+
+<!--javascript -->
+
+
+     <script type="text/javascript">   
+
+        var currentLocation = window.location.origin;
+
+                $(".submit").on("click", function(){
+
+                        console.log("submitted");
+
+                        //prevent page reload
+                        //event.preventDefault();
+
+                        /// create a new variable to store form data
+                        var newUser = {
+                                name: $("#userName").val().trim(),
+                                photo: $("#userPhoto").val().trim(),
+                                scores: [
+                                        $("#q1").val().trim(),
+                                        $("#q2").val().trim(),
+                                        $("#q3").val().trim(),
+                                        $("#q4").val().trim(),
+                                        $("#q5").val().trim(),
+                                        $("#q6").val().trim(),
+                                        $("#q7").val().trim(),
+                                        $("#q8").val().trim(),
+                                        $("#q9").val().trim(),
+                                        $("#q10").val().trim()
+                                ]
+                        };
+
+                        console.log(newUser);
+
+                        $.post("/api/friends", newUser)
+                                .done(function(data){
+                                console.log("New User has been added!")
+                               
+                               
+                                
+                        // obtain the best match data
+                                $("#friendName").text(data.name);
+                                $("#friendImage").attr("src", data.photo);
+
+                                //toggle modal
+                                $("#matchModal").modal('toggle');
+                                })
+                                //reset the survey fields.
+                                $("#userName").val("");
+                                $("#userPhoto").val("");
+                                [
+                                        $("#q1").val(""),
+                                        $("#q2").val(""),
+                                        $("#q3").val(""),
+                                        $("#q4").val(""),
+                                        $("#q5").val(""),
+                                        $("#q6").val(""),
+                                        $("#q7").val(""),
+                                        $("#q8").val(""),
+                                        $("#q9").val(""),
+                                        $("#q10").val("")
+                                ]
+                        
+
+                })
+
+
+
+</script>
+</body>
+</html>
