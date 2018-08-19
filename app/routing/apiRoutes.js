@@ -40,7 +40,7 @@ module.exports = function(app) {
             var comparedFriend = friendsData[i];
             var totalDifference = 0;
 
-
+            //loop through friends data scores.  Subtract new friend score from friends data score.  Take absolute value of difference.
             for(var j = 0; j < comparedFriend.scores.length; j++) {
                 var differenceOneScore = Math.abs(comparedFriend.scores[j] - newFriend.scores[j]);
 
@@ -51,7 +51,7 @@ module.exports = function(app) {
         };
 
 
-        
+        //loop through friend match array.  compare new friend with friend array
         var friendMatch = differencesArray[0];
         var friendMatchIndex = 0;
 
@@ -69,9 +69,9 @@ module.exports = function(app) {
         
         console.log(friendsData[friendMatchIndex]);
 
-    
+        //push new friend to friend data array
         friendsData.push(newFriend);
-            
+            //push friend match to html
          res.json(friendsData[friendMatchIndex]);
     })
 }
