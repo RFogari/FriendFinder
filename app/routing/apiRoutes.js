@@ -2,7 +2,7 @@
 
 //load data from survey.html and server.js
 
-var friends = require("../data/friends.js");
+var friendsData = require("../data/friends.js");
 
 
 //routing
@@ -12,7 +12,7 @@ var friends = require("../data/friends.js");
 module.exports = function(app) {
 
     app.get('/api/friends', function(req, res) {
-        res.json(friends);
+        res.json(friendsData);
     });
 
 
@@ -22,35 +22,56 @@ module.exports = function(app) {
     app.post('/api/friends', function(req, res) {
 
         
-        //variables for finding a match
+        
 
-        //data based on survey submission
+        //variable for new friend from submitting survey
         var newFriend = req.body;
-        //scores variable from data submitted with form
-        var newScore = newFriend.scores;
 
-        //placeholder for bestMatch score
-        var bestMatch = 1000;
-
-        //loop through friends.js data
-        for(var i = 0; i < friends.length; i++) {
-           
-            var difference = 0;
-           
-            //loop through survey scores. loop will be used for newfriend scores and friends.js data
-
-            for(var j = 0; j < newScore.length; j++) {
-                //absolute value subtracting friend score from new user score
-                difference += Math.abs(friends[i].score[j] - newScore[j]);
-
+            //loop through new friend scores
+            for(var i = 0; i < newFriend.scores.length; i++) {
+                newFriend.scores[i] = parseInt(newFriend.scores[i]);
             };
-            if (difference < bestMatch){
-                bestMatch = difference;
-                index = i;
+
+
+        //array to store score differences
+        var differencesArray = [];
+
+        for(var i = 0; i < friendsData.length; i++) {
+            var comparedFriend = friendsData[i];
+            var totalDifference = 0;
+
+
+            for(var j = 0; j < comparedFriend.scores.length; j++) {
+                var differenceOneScore = Math.abs(comparedFriend.scores[j] - newFriend.scores[j]);
+
+                    totalDifference += differenceOneScore;
+            }
+
+                differencesArray[i] = totalDifference;
+        };
+
+
+        
+        var friendMatch = differencesArray[0];
+        var friendMatchIndex = 0;
+
+        for(var i = 1; i < differencesArray.length; i++) {
+            if (differencesArray[i] < friendMatch) {
+                friendMatch = differencesArray[i];
+                
+                friendMatchIndex = i;
             }
         }
-            console.log(friends[index]);
-            friends.push(newFriend);
-            res.json(friends[index]);
+         
+        
+        
+           
+        
+        console.log(friendsData[friendMatchIndex]);
+
+    
+        friendsData.push(newFriend);
+            
+         res.json(friendsData[friendMatchIndex]);
     })
 }

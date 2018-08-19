@@ -42,7 +42,7 @@
                     </div>
 
                     <div class="form-group">
-                            <label for"userPhoto">Link To Your Photo</label>
+                            <label for= "userPhoto">Link To Your Photo</label>
                             <input type="text" class="form-control" id="userPhoto" placeholder="Personal Photo Required">
                     </div>
             </div>
@@ -112,20 +112,23 @@
                             </select>
                     </div>
             </div>
-            
+
+
             <div class="questions">
-                    <div class="form-group">
-                            <h4 class="questionnumbertext">Question 5</h4>
-                            <label for="question5" class="question">You are a wealthy entrepreneur running an enterprise by day, with a secret identity by night.</label>
-                            <select class="form-control" id="q5">
-                              <option value="1">1 <span id="answerDetail">(Not So Much)</span></option>
-                              <option value="2">2</option>
-                              <option value="3">3</option>
-                              <option value="4">4</option>
-                              <option value="5">5 <span id="answerDetail">(Very Much)</span></option>
-                            </select>
-                    </div>
-            </div>
+                <div class="form-group">
+                        <h4 class="questionnumbertext">Question 5</h4>
+                        <label for="question4" class="question">You are a wealthy entrepreneur running an enterprise by day with a secret identity by night.</label>
+                        <select class="form-control" id="q5">
+                          <option selected>Select an Option</option>
+                          <option value="1">1 <span id="answerDetail">(Not So Much)</span></option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5 <span id="answerDetail">(Very Much)</span></option>
+                        </select>
+                </div>
+        </div>
+            
 
             <div class="questions">
                     <div class="form-group">
@@ -222,8 +225,8 @@
 
     
 <!-- Modal -->
-        <div class="modal fade" id="matchModal" tabindex="-1" role="dialog" aria-labelledby="friendModal" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal fade bd-example-modal-lg" id="matchModal" tabindex="-1" role="dialog" aria-labelledby="friendModal" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                 <div class="modal-content">
                 <div class="modal-header">
                 <h5 class="modal-title" id="modalTitle">Your most compatible match.</h5>
@@ -292,8 +295,8 @@
 
                         console.log(newUser);
 
-                        $.post("/api/friends", newUser)
-                                .done(function(data){
+                        $.post(currentLocation + "/api/friends", newUser, function(data){
+                               
                                 console.log("New User has been added!")
                                
                                
@@ -306,7 +309,7 @@
                                 $("#matchModal").modal('toggle');
                                 })
                                 //reset the survey fields.
-                                $("#userName").val("");
+                              /*  $("#userName").val("");
                                 $("#userPhoto").val("");
                                 [
                                         $("#q1").val(""),
@@ -319,7 +322,7 @@
                                         $("#q8").val(""),
                                         $("#q9").val(""),
                                         $("#q10").val("")
-                                ]
+                                ]*/
                         
 
                 })

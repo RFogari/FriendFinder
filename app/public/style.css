@@ -66,3 +66,18 @@ body {
     text-align: center;
     margin-top: 30px;
 }
+
+#friendimage{
+    height: auto;
+    width: auto;
+}
+
+.modal-body{
+    height:100%;
+    width:100%;
+}
+
+.modal-content {
+    height:100%;
+    width: 100%;
+}

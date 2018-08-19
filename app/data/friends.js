@@ -3,7 +3,7 @@
 var friendsData = [
     {   
         name: "Bruce Wayne",
-        photo: "https://m.media-amazon.com/images/M/MV5BMjA1MTQ0ODM5OV5BMl5BanBnXkFtZTcwODEyMjc2Nw@@._V1_SY1000_CR0,0,1503,1000_AL_.jpg",
+        photo: "https://www.technobuffalo.com/wp-content/uploads/2016/03/christian-bale-batman-disappointed-the-dark-knight-470x310@2x.jpg",
         scores:[1, 1, 1, 1, 5, 1, 1, 1, 5, 1]
     },
     {
@@ -13,12 +13,12 @@ var friendsData = [
     },
     {
         name: "Jack Torrance",
-        photo: "https://m.media-amazon.com/images/M/MV5BOGZhNWRhMDMtZGYxMi00NDhlLWIxM2QtYmJkMzEzNDgwMDE2XkEyXkFqcGdeQXVyNjE3NjA1MzQ@._V1_.jpg",
+        photo: "https://i.stack.imgur.com/sLvHa.gif",
         scores: [1, 1, 5, 1, 1, 5, 1, 1, 1, 1]
     },
     {
         name: "Rocky Balboa",
-        photo: "https://m.media-amazon.com/images/M/MV5BZmFkMTM3YWYtOGIzMy00YzYwLThhMmQtNWU4OTY4NTA1ZmIwXkEyXkFqcGdeQXVyNzc5NjM0NA@@._V1_.jpg",
+        photo: "https://images.amcnetworks.com/blogs.amctv.com/wp-content/uploads/2011/11/rocky-stallone-560.jpg",
         scores: [1, 1, 1, 1, 1, 1, 5, 1, 1]
     },
     {
@@ -28,7 +28,7 @@ var friendsData = [
     },
     {
         name: "Vito Corleone",
-        photo: "https://m.media-amazon.com/images/M/MV5BNGU4NmRlYjctZDgwYi00NTAzLTk4ZGMtZTU2Yzc0NDI0NTcyXkEyXkFqcGdeQXVyMDc2NTEzMw@@._V1_SY1000_CR0,0,653,1000_AL_.jpg",
+        photo: "https://upload.wikimedia.org/wikipedia/en/2/21/Godfather15_flip.jpg",
         scores: [1, 5, 1, 1, 1, 1, 1, 1, 5, 1]
     }
 ]
